@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ly</groupId>
+  <artifactId>spring-distributed-study</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <!--123-->
+	  <parent>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-parent</artifactId>
+			<version>2.0.0.RELEASE</version>
+			<relativePath/> <!-- lookup parent from repository -->
+	  </parent>
+	  
+	  
+	  <dependencyManagement>
+	  		<dependencies>
+	  			<dependency>
+	  				<groupId>com.google.guava</groupId>
+					<artifactId>guava</artifactId>
+	  				<version>18.0</version>
+	  			</dependency>
+<!-- 	  			<dependency> -->
+<!-- 					<groupId>com.fasterxml.jackson.core</groupId> -->
+<!-- 					<artifactId>jackson-databind</artifactId> -->
+<!-- 					<version>2.7.4</version> -->
+<!-- 				</dependency> -->
+<!-- 			         <version>Finchley.RC2</version> -->
+				<dependency>
+					 <groupId>org.springframework.cloud</groupId>
+			         <artifactId>spring-cloud-dependencies</artifactId>
+			         <version>Finchley.RC2</version>
+			         <type>pom</type>
+			         <scope>import</scope>
+				</dependency>
+<!-- 				<dependency> -->
+<!-- 					 <groupId>org.springframework.cloud</groupId> -->
+<!-- 			         <artifactId>spring-cloud-dependencies</artifactId> -->
+<!-- 			         <version>Camden.SR2</version> -->
+<!-- 			         <type>pom</type> -->
+<!-- 			         <scope>import</scope> -->
+<!-- 				</dependency> -->
+	  		</dependencies>
+	  </dependencyManagement>
+	 
+	  <modules>
+	  	<module>spring-distributed-socket-day1</module>
+	  </modules>
+</project>
