@@ -46,5 +46,6 @@
 	 
 	  <modules>
 	  	<module>spring-distributed-socket-day1</module>
+		<module>spring-distributed-serializable-day2</module>
 	  </modules>
 </project>

@@ -4,7 +4,7 @@ import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
 
-public class MulticaseClient {
+public class MulticaseClient{
 
 	public static void main(String[] args) {
 		//地址段:224.0.0.0-239.255.255.255
