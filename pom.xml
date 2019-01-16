@@ -47,5 +47,7 @@
 	  <modules>
 	  	<module>spring-distributed-socket-day1</module>
 		<module>spring-distributed-serializable-day2</module>
+		<module>spring-distributed-rmi-server-day3</module>
+		<module>spring-distributed-rmi-client-day3</module>
 	  </modules>
 </project>
