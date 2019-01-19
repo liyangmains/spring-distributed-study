@@ -49,5 +49,7 @@
 		<module>spring-distributed-serializable-day2</module>
 		<module>spring-distributed-rmi-server-day3</module>
 		<module>spring-distributed-rmi-client-day3</module>
+		<module>spring-distributed-webservice-server-day4</module>
+		<module>spring-distributed-webservice-client-day4</module>
 	  </modules>
 </project>
