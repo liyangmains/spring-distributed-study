@@ -22,6 +22,7 @@ import org.apache.zookeeper.data.Stat;
 public class CuratorApiOperatorDemo {
 
 //	private final static String CONNECTSTRING = "192.168.20.188:2181,192.168.190:2181";
+	
 	private final static String CONNECTSTRING = "192.168.20.188:2181";
 	
 	public static CuratorFramework getInstance(){
