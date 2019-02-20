@@ -30,7 +30,7 @@ public class CuratorApiOperatorDemo {
 		CuratorFramework curatorFramework = 
 				CuratorFrameworkFactory.newClient(CONNECTSTRING, 5000, 5000,new ExponentialBackoffRetry(1000, 3));
 		curatorFramework.start();
-		//第二种连接方式 (namespace方法默认创建的节点都在当前指定的节点下)
+		//第二种连接方式 (namespace("/curator")方法默认创建的节点都在当前指定的节点下)
 		/*CuratorFramework curatorFramework1 = 
 				CuratorFrameworkFactory.builder().connectString(CONNECTSTRING).connectionTimeoutMs(5000).sessionTimeoutMs(5000)
 				.retryPolicy(new ExponentialBackoffRetry(1000, 3)).namespace("/curator").build();
