@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+       
+       <!-- 当前项目名称 -->
+       <dubbo:application name="dubbo-order" owner="ly"/>
+       <!-- 当前服务暴露的服务地址对应的注册中心 -->
+       <!-- <dubbo:registry address="N/A"/> -->
+       <dubbo:registry protocol="zookeeper" address="192.168.16.189:2881,192.168.16.190:2881"/>
+       <!-- 生成一个远程服务的调用代理-->
+       <dubbo:reference id="userService" interface="com.ly.user.service.UserService"
+       url="dubbo://192.168.16.102:20881/com.ly.user.service.UserService"/>
+</beans>

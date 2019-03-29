@@ -109,7 +109,6 @@ public class CuratorApiOperatorLeaderDemo {
                         System.out.println(name + ":I am leader.");
                         Thread.sleep(2000);
                     }
-
                     @Override
                     public void stateChanged(CuratorFramework client, ConnectionState newState) {
 

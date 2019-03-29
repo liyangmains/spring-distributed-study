@@ -52,5 +52,7 @@
 		<module>spring-distributed-webservice-server-day4</module>
 		<module>spring-distributed-webservice-client-day4</module>
 		<module>spring-distributed-zookeeper-day5</module>
+		<module>spring-distributed-dubbo-user-day6</module>
+		<module>spring-distributed-dubbo-order-day6</module>
 	  </modules>
 </project>
