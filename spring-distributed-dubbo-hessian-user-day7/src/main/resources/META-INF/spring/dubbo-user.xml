@@ -24,4 +24,5 @@
        <!-- 服务需要暴露的接口服务 当有多个版本的服务接口相同时(即interface相同)version属性可以设置不同的版本号 -->
        <dubbo:service interface="com.ly.user.service.UserService" ref="userService" protocol="dubbo"/>
        <dubbo:service interface="com.ly.user.service.UserService" ref="userService2" protocol="hessian"/>
+       <dubbo:service interface="com.ly.user.service.UserService" ref="userService3" protocol="dubbo"/>
 </beans>

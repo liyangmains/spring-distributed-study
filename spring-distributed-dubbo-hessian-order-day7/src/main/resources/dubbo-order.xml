@@ -19,4 +19,6 @@
        <!-- 当有多个版本的服务接口相同时(即interface相同)version属性可以使用对应的版本号version -->
        <dubbo:reference id="userService" interface="com.ly.user.service.UserService" protocol="dubbo"/>
        <dubbo:reference id="userService2" interface="com.ly.user.service.UserService" protocol="hessian"/>
+       <!-- async="true"开启异步请求 -->
+       <dubbo:reference id="userService3" interface="com.ly.user.service.UserService" protocol="dubbo" async="true"/>
 </beans>
