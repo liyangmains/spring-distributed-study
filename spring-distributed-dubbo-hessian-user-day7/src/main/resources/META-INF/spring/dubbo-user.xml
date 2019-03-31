@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+       
+       <context:annotation-config/>
+       <context:component-scan base-package="com.ly.*.service.*"/>
+       <!-- 当前项目名称 -->
+       <dubbo:application name="dubbo-hessian-user" owner="ly"/>
+       <!-- 当前服务暴露的服务地址对应的注册中心 -->
+       <!-- <dubbo:registry address="N/A"/> -->
+       <dubbo:registry protocol="zookeeper" address="192.168.16.189:2181,192.168.16.190:2181"/>
+       <!-- 当前服务依赖的协议以及端口 dubbo基于tcp协议不需依赖web容器-->
+       <dubbo:protocol port="20881" name="dubbo"/>
+	   <!-- hessian协议基于http需依赖jetty -->
+	   <dubbo:protocol port="8090" name="hessian" server="jetty"/>
+       <!-- 服务需要暴露的接口服务 当有多个版本的服务接口相同时(即interface相同)version属性可以设置不同的版本号 -->
+       <dubbo:service interface="com.ly.user.service.UserService" ref="userService" protocol="dubbo"/>
+       <dubbo:service interface="com.ly.user.service.UserService" ref="userService2" protocol="hessian"/>
+</beans>

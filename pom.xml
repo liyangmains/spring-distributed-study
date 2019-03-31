@@ -54,5 +54,7 @@
 		<module>spring-distributed-zookeeper-day5</module>
 		<module>spring-distributed-dubbo-user-day6</module>
 		<module>spring-distributed-dubbo-order-day6</module>
+		<module>spring-distributed-dubbo-hessian-user-day7</module>
+		<module>spring-distributed-dubbo-hessian-order-day7</module>
 	  </modules>
 </project>
