@@ -12,9 +12,9 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public String getUserName(String userName) {
 		// TODO Auto-generated method stub
-		System.out.println("正在访问000");
+		System.out.println("正在访问111");
 //		return new User(userName).toString();
-		return "正在访问000";
+		return "正在访问111";
 	}
 
 }

@@ -18,9 +18,9 @@
        <!-- <dubbo:registry address="N/A"/> -->
        <dubbo:registry protocol="zookeeper" address="192.168.16.189:2181,192.168.16.190:2181"/>
        <!-- 当前服务依赖的协议以及端口 dubbo基于tcp协议不需依赖web容器-->
-       <dubbo:protocol port="20881" name="dubbo"/>
+       <dubbo:protocol port="20882" name="dubbo"/>
 	   <!-- hessian协议基于http需依赖jetty -->
-	   <dubbo:protocol port="8090" name="hessian" server="jetty"/>
+	   <dubbo:protocol port="8091" name="hessian" server="jetty"/>
        <!-- 服务需要暴露的接口服务 当有多个版本的服务接口相同时(即interface相同)version属性可以设置不同的版本号 -->
        <dubbo:service interface="com.ly.user.service.UserService" ref="userService" protocol="dubbo"/>
        <dubbo:service interface="com.ly.user.service.UserService" ref="userService2" protocol="hessian"/>
