@@ -1,0 +1,14 @@
+server:
+  port: 8081
+dubbo:
+  application:
+    name: consumer
+  registry:
+    protocol: zookeeper
+    address: 192.168.16.189:2181,192.168.16.190:2181
+#monitor需要启动dubbo监控服务，如没有monitor服务会报错，
+#但不会影响使用，如访问monitor未看到chars的访问图像不显示，原因是monitor与dubbo
+#版本不一致https://www.cnblogs.com/zhangshiwen/p/6204318.html
+  monitor:
+    protocol: registry
+    

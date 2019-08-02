@@ -57,5 +57,8 @@
 		<module>spring-distributed-dubbo-hessian-user-day7</module>
 		<module>spring-distributed-dubbo-hessian-user1-day7</module>
 		<module>spring-distributed-dubbo-hessian-order-day7</module>
+		<module>spring-distributed-dubbo-interface-day8</module>
+		<module>spring-distributed-dubbo-provider-day8</module>
+		<module>spring-distributed-dubbo-consumer-day8</module>
 	  </modules>
 </project>
