@@ -11,7 +11,7 @@ import com.ly.service.IUserService;
 @RestController
 public class UserController {
 	
-	@Reference
+	@Reference(version="2")
 	private IUserService userService;
 	
 	@PostMapping("/login")

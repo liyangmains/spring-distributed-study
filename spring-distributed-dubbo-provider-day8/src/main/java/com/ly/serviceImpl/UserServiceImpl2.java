@@ -8,9 +8,9 @@ import com.ly.entity.LoginEntity;
 import com.ly.entity.ResponseEntity;
 import com.ly.service.IUserService;
 
-@Service(version="1")
+@Service(version="2")
 @Component
-public class UserServiceImpl implements IUserService{
+public class UserServiceImpl2 implements IUserService{
 
 	@Override
 	public ResponseEntity getLogin(LoginEntity loginEntity) {
@@ -20,7 +20,7 @@ public class UserServiceImpl implements IUserService{
 			responseEntity.setContent("账号或密码不能为空");
 		}
 		responseEntity.setCode(100000);
-		responseEntity.setContent("登录成功,版本1");
+		responseEntity.setContent("登录成功,版本2");
 		return responseEntity;
 	}
 
