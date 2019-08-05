@@ -60,5 +60,6 @@
 		<module>spring-distributed-dubbo-interface-day8</module>
 		<module>spring-distributed-dubbo-provider-day8</module>
 		<module>spring-distributed-dubbo-consumer-day8</module>
+		<module>spring-distributed-jta-atomikos-xa-day9</module>
 	  </modules>
 </project>

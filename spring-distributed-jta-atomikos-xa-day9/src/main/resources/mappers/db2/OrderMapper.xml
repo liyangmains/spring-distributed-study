@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ly.dao.OrderMapper" >
+
+  <resultMap id="BaseResultMap" type="com.ly.bean.Order" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+  	<result column="name" property="name" jdbcType="VARCHAR" />
+  	<result column="price" property="price" jdbcType="DECIMAL" />
+  </resultMap>
+  
+  <insert id="insert" parameterType="com.ly.bean.Order" keyProperty="id" useGeneratedKeys="true">
+  insert into orders (id,name,price) values (#{id,jdbcType=INTEGER},#{name,jdbcType=VARCHAR},#{price,jdbcType=DECIMAL})
+  </insert>
+  
+  <update  id="updateOrder" parameterType="com.ly.bean.Order" >
+    update orders
+    <set >
+      <if test="id != null" >
+        id = #{id,jdbcType=INTEGER} ,
+      </if>
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR} ,
+      </if>
+      <if test="price != null" >
+        price = #{price,jdbcType=DECIMAL} ,
+      </if>
+    </set >
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  
+</mapper>
