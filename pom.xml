@@ -64,5 +64,6 @@
 		<module>spring-distributed-dubbo-jta-atomikos-xa-order-day9</module>
 		<module>spring-distributed-netty-tomcat-day10</module>
 		<module>spring-distributed-netty-chat-day11</module>
+		<module>spring-distributed-activemq-day12</module>
 	  </modules>
 </project>
