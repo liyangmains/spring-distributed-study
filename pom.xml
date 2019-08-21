@@ -67,5 +67,7 @@
 		<module>spring-distributed-activemq-day12</module>
 		<module>spring-distributed-activemq-producer-day13</module>
 		<module>spring-distributed-activemq-consumer-day13</module>
+		<module>spring-distributed-kafka-producer-day14</module>
+		<module>spring-distributed-kafka-consumer-day14</module>
 	  </modules>
 </project>

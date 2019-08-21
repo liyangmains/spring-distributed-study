@@ -1,0 +1,17 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /producer
+spring:
+  kafka:
+    #kafka集群地址
+    bootstrap-servers:
+    - 192.168.16.189:9092
+    - 192.168.16.190:9092
+    producer:
+      retries: 0
+      batch-size: 16384
+      buffer-memory: 33554432 #这个属性将绑定到@ConfigurationProperties(prefix = "spring.kafka.producer")注解的类的bufferMemory字段
+      #key value值类型需要与KafkaTemplate<Integer,String>保持一致
+      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
