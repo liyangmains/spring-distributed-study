@@ -69,5 +69,6 @@
 		<module>spring-distributed-activemq-consumer-day13</module>
 		<module>spring-distributed-kafka-producer-day14</module>
 		<module>spring-distributed-kafka-consumer-day14</module>
+		<module>spring-distributed-mongo-morphia-day15</module>
 	  </modules>
 </project>
