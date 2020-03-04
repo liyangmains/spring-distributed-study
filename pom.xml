@@ -60,5 +60,15 @@
 		<module>spring-distributed-dubbo-interface-day8</module>
 		<module>spring-distributed-dubbo-provider-day8</module>
 		<module>spring-distributed-dubbo-consumer-day8</module>
+		<module>spring-distributed-jta-atomikos-xa-day9</module>
+		<module>spring-distributed-dubbo-jta-atomikos-xa-order-day9</module>
+		<module>spring-distributed-netty-tomcat-day10</module>
+		<module>spring-distributed-netty-chat-day11</module>
+		<module>spring-distributed-activemq-day12</module>
+		<module>spring-distributed-activemq-producer-day13</module>
+		<module>spring-distributed-activemq-consumer-day13</module>
+		<module>spring-distributed-kafka-producer-day14</module>
+		<module>spring-distributed-kafka-consumer-day14</module>
+		<module>spring-distributed-mongo-morphia-day15</module>
 	  </modules>
 </project>
